@@ -1283,6 +1283,10 @@ input:checked + .toggle-bg {
   height: 750px;
 }
 
+.h-\[800px\] {
+  height: 800px;
+}
+
 .w-1\/2 {
   width: 50%;
 }
