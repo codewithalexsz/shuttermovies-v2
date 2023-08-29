@@ -1,0 +1,47 @@
+.swiper-btns {
+  height: 14px !important;
+  width: 30px !important;
+  overflow: hidden;
+  /* display: none !important; */
+}
+/* .swiper-btns:hover {
+  display: block !important;
+} */
+
+.dynamic-txts {
+  line-height: 90px;
+  height: 90px;
+  overflow: hidden;
+}
+
+.dynamic-txts li {
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(3) infinite;
+}
+.dynamic-txts li::after {
+  background-color: black;
+  content: "";
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  /* border-left: 1px solid white; */
+  animation: typing 3s steps(8) infinite;
+}
+
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slide {
+  100% {
+    top: -280px;
+  }
+}
