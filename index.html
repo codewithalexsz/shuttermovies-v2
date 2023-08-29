@@ -65,12 +65,14 @@
   >
     <!-- LANDING -->
     <div
-      style="background-image: url(/assets/img/bg-hero.png)"
-      class="hero h-[80vh] relative sm:h-[110vh] text-center items-center justify-center flex flex-col"
+      class="hero relative sm:h-[110vh] text-center items-center justify-center flex flex-col"
     >
+      <div class="hidden w-[100%] sm:block relative">
+        <img src="/assets/img/bg-hero.png" alt="" />
+      </div>
       <div class="">
         <img
-          class="relative w-[100%] sm:hidden h-[80vh]"
+          class="relative w-[100%] sm:hidden h-[100vh]"
           src="/assets/img/bg-hero.png"
           alt=""
         />
@@ -82,31 +84,33 @@
         <h1 class="font-bold text-[60px] sm:text-[90px] tracking-wide">
           Shutter
         </h1>
-        <p>Welcome to ShutterMovies</p>
+        <div
+          class="txt-warapper justify-center items-center gap-4 text-white flex sm:flex"
+        >
+          <div
+            class="static-txt sm:text-[2.2rem] text-[1.0rem] sm:h-[90px] sm:pt-4 font-medium"
+          >
+            Home To Your Favourite
+          </div>
+          <ul
+            class="dynamic-txts sm:text-[40px] text-[1.5rem] sm:h-[40px] text-left font-bold"
+          >
+            <li><span class="text-purple-400">MOVIES</span></li>
+            <li><span class="text-purple-600">TV SHOWS</span></li>
+            <li><span class="text-purple-800">ANIME.</span></li>
+          </ul>
+        </div>
       </div>
     </div>
 
     <!-- Swiper -->
     <!-- HERO CAROUSEL TRENDING MOVIES -->
-    <div
-      class="txt-warapper justify-center hidden items-center gap-4 text-white sm:flex grid t py-10"
-    >
-      <div
-        class="static-txt sm:text-[2.5rem] rext-[1.8rem] h-[90px] pt-2 font-medium"
-      >
-        Home To Your Favourite
-      </div>
-      <ul class="dynamic-txts sm:text-[60px] sm:h-[90px] text-left font-bold">
-        <li><span>MOVIES</span></li>
-        <li><span>TV SHOWS</span></li>
-        <li><span>and More.</span></li>
-      </ul>
-    </div>
+
     <div class="swiper transition-all ease-in-out duration-400 mySwiper">
       <div class="swiper-wrapper">
         <!-- MOVIE 1 -->
 
-        <div class="swiper-slide mb-10">
+        <div class="swiper-slide bg-black mb-10">
           <div
             class="card-wrap sm:w-[100%] flex flex-col justify-center align-middle"
           >
@@ -118,16 +122,16 @@
                   alt=""
                 />
               </div>
-              <div class="h-[700px] block sm:hidden">
+              <div class="block bg-black sm:hidden">
                 <img
-                  class="h-[700px] block sm:hidden"
+                  class="h-[750px] hover:scale-[1.01] transition-all ease-in-out duration-500 rounded-b-[2rem] block sm:hidden"
                   src="/assets/poster/indiana Jones  mobile.jpg"
                   alt=""
                 />
               </div>
             </div>
             <div
-              class="show-desc sm:absolute sm:z-10 sm:bottom-16 sm:left-5 sm:bg-transparent sm:text-left bottom-16 bg-black text-white"
+              class="show-desc sm:absolute sm:z-10 sm:bottom-16 sm:left-[25px] sm:bg-transparent sm:text-left bottom-16 bg-black text-white"
             >
               <div class="bg-transparent hidden sm:grid">
                 <h1 class="text-[2.2rem] leading-[1.08] font-bold">
@@ -143,7 +147,7 @@
               </div>
 
               <a
-                class="w-[180px] sm:w-[230px] transition-all ease-in-out duration-400 sm:h-[48px] hover:scale-[1.02] my-3 tracking-wider group relative inline-flex items-center overflow-hidden rounded border border-current px-8 py-3 text-white focus:outline-none focus:ring active:text-white"
+                class="w-[70%] sm:w-[230px] transition-all ease-in-out duration-400 sm:h-[48px] hover:scale-[1.02] my-5 tracking-wider group relative inline-flex items-center overflow-hidden rounded border border-purple-800 px-8 py-3 text-white focus:outline-none focus:ring active:text-white"
                 href="/download"
               >
                 <span
@@ -174,43 +178,46 @@
             </div>
           </div>
         </div>
-        <!-- MOVIE 2 -->
 
-        <div class="swiper-slide">
-          <div class="card-wrap flex justify-center align-middle flex-col">
+        <!-- SLIDE 2 -->
+        <div class="swiper-slide bg-black mb-10">
+          <div
+            class="card-wrap sm:w-[100%] flex flex-col justify-center align-middle"
+          >
             <div class="">
               <div class="hidden sm:block sm:h-[auto]">
                 <img
-                  class="hidden sm:block sm:w-[100%] sm:h-[auto]"
-                  src="/assets/poster/special ops .jpg"
+                  class="hidden sm:block sm:h-[750px] sm:hover:scale-[1.01] transition-all ease-in-out duration-500"
+                  src="/assets/poster/Indiana-Jones.jpg"
                   alt=""
                 />
               </div>
-              <div class="h-[700px] block sm:hidden">
+              <div class="block bg-black sm:hidden">
                 <img
-                  class="h-[700px] block sm:hidden"
-                  src="/assets/poster/special ops mobile.jpg"
+                  class="h-[750px] hover:scale-[1.01] transition-all ease-in-out duration-500 rounded-b-[2rem] block sm:hidden"
+                  src="/assets/poster/indiana Jones  mobile.jpg"
                   alt=""
                 />
               </div>
             </div>
             <div
-              class="show-desc sm:absolute sm:z-10 sm:bottom-16 sm:left-5 sm:bg-transparent sm:text-left bottom-16 bg-black text-white"
+              class="show-desc sm:absolute sm:z-10 sm:bottom-16 sm:left-[25px] sm:bg-transparent sm:text-left bottom-16 bg-black text-white"
             >
               <div class="bg-transparent hidden sm:grid">
-                <h1 class="text-[2.5rem] leading-[1.08] font-bold">
+                <h1 class="text-[2.2rem] leading-[1.08] font-bold">
                   Home To All Your <br />
                   favourite Shows
                 </h1>
                 <p
-                  class="text-[15px] my-4 leading-[1.33] tracking-wider font-[600]"
+                  class="text-[13px] my-4 leading-[1.33] tracking-wider font-[600]"
                 >
                   Enjoy Quality Downloads, ZERO Ads,<br />
                   VOD, and more.
                 </p>
               </div>
+
               <a
-                class="w-[180px] sm:w-[230px] transition-all ease-in-out duration-400 sm:h-[48px] hover:scale-[1.02] my-3 tracking-wider group relative inline-flex items-center overflow-hidden rounded border border-current px-8 py-3 text-white focus:outline-none focus:ring active:text-white"
+                class="w-[70%] sm:w-[230px] transition-all ease-in-out duration-400 sm:h-[48px] hover:scale-[1.02] my-5 tracking-wider group relative inline-flex items-center overflow-hidden rounded border border-purple-800 px-8 py-3 text-white focus:outline-none focus:ring active:text-white"
                 href="/download"
               >
                 <span
@@ -242,43 +249,45 @@
           </div>
         </div>
 
-        <!-- MOVIE 3 -->
-
-        <div class="swiper-slide">
-          <div class="card-wrap flex justify-center align-middle flex-col">
+        <!-- SLIDE 3 -->
+        <div class="swiper-slide bg-black mb-10">
+          <div
+            class="card-wrap sm:w-[100%] flex flex-col justify-center align-middle"
+          >
             <div class="">
               <div class="hidden sm:block sm:h-[auto]">
                 <img
-                  class="hidden sm:block sm:h-[750px]"
-                  src="/assets/poster/ahsoka.jpg"
+                  class="hidden sm:block sm:h-[750px] sm:hover:scale-[1.01] transition-all ease-in-out duration-500"
+                  src="/assets/poster/Indiana-Jones.jpg"
                   alt=""
                 />
               </div>
-              <div class="h-[700px] block sm:hidden">
+              <div class="block bg-black sm:hidden">
                 <img
-                  class="h-[700px] block sm:hidden"
-                  src="/assets/poster/ahsoka mobile.jpg"
+                  class="h-[750px] hover:scale-[1.01] transition-all ease-in-out duration-500 rounded-b-[2rem] block sm:hidden"
+                  src="/assets/poster/indiana Jones  mobile.jpg"
                   alt=""
                 />
               </div>
             </div>
             <div
-              class="show-desc sm:absolute sm:z-10 sm:bottom-16 sm:left-5 sm:bg-transparent sm:text-left bottom-16 bg-black text-white"
+              class="show-desc sm:absolute sm:z-10 sm:bottom-16 sm:left-[25px] sm:bg-transparent sm:text-left bottom-16 bg-black text-white"
             >
               <div class="bg-transparent hidden sm:grid">
-                <h1 class="text-[2.5rem] leading-[1.08] font-bold">
+                <h1 class="text-[2.2rem] leading-[1.08] font-bold">
                   Home To All Your <br />
                   favourite Shows
                 </h1>
                 <p
-                  class="text-[15px] my-4 leading-[1.33] tracking-wider font-[600]"
+                  class="text-[13px] my-4 leading-[1.33] tracking-wider font-[600]"
                 >
                   Enjoy Quality Downloads, ZERO Ads,<br />
                   VOD, and more.
                 </p>
               </div>
+
               <a
-                class="w-[180px] sm:w-[230px] transition-all ease-in-out duration-400 sm:h-[48px] hover:scale-[1.02] my-3 tracking-wider group relative inline-flex items-center overflow-hidden rounded border border-current px-8 py-3 text-white focus:outline-none focus:ring active:text-white"
+                class="w-[70%] sm:w-[230px] transition-all ease-in-out duration-400 sm:h-[48px] hover:scale-[1.02] my-5 tracking-wider group relative inline-flex items-center overflow-hidden rounded border border-purple-800 px-8 py-3 text-white focus:outline-none focus:ring active:text-white"
                 href="/download"
               >
                 <span
@@ -310,34 +319,45 @@
           </div>
         </div>
 
-        <!-- MOVIE 4 -->
-
-        <div class="swiper-slide">
-          <div class="card-wrap flex justify-center align-middle flex-col">
+        <!-- SLIDE 4 -->
+        <div class="swiper-slide bg-black mb-10">
+          <div
+            class="card-wrap sm:w-[100%] flex flex-col justify-center align-middle"
+          >
             <div class="">
-              <img
-                class="h-[700px]"
-                src="/assets/poster/4nnldcrgfergsfd.jpg"
-                alt=""
-              />
+              <div class="hidden sm:block sm:h-[auto]">
+                <img
+                  class="hidden sm:block sm:h-[750px] sm:hover:scale-[1.01] transition-all ease-in-out duration-500"
+                  src="/assets/poster/Indiana-Jones.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="block bg-black sm:hidden">
+                <img
+                  class="h-[750px] hover:scale-[1.01] transition-all ease-in-out duration-500 rounded-b-[2rem] block sm:hidden"
+                  src="/assets/poster/indiana Jones  mobile.jpg"
+                  alt=""
+                />
+              </div>
             </div>
             <div
-              class="show-desc sm:absolute sm:z-10 sm:bottom-16 sm:left-5 sm:bg-transparent sm:text-left bottom-16 bg-black text-white"
+              class="show-desc sm:absolute sm:z-10 sm:bottom-16 sm:left-[25px] sm:bg-transparent sm:text-left bottom-16 bg-black text-white"
             >
               <div class="bg-transparent hidden sm:grid">
-                <h1 class="text-[2.5rem] leading-[1.08] font-bold">
+                <h1 class="text-[2.2rem] leading-[1.08] font-bold">
                   Home To All Your <br />
                   favourite Shows
                 </h1>
                 <p
-                  class="text-[15px] my-4 leading-[1.33] tracking-wider font-[600]"
+                  class="text-[13px] my-4 leading-[1.33] tracking-wider font-[600]"
                 >
                   Enjoy Quality Downloads, ZERO Ads,<br />
                   VOD, and more.
                 </p>
               </div>
+
               <a
-                class="w-[180px] sm:w-[230px] transition-all ease-in-out duration-400 sm:h-[48px] hover:scale-[1.02] my-3 tracking-wider group relative inline-flex items-center overflow-hidden rounded border border-current px-8 py-3 text-white focus:outline-none focus:ring active:text-white"
+                class="w-[70%] sm:w-[230px] transition-all ease-in-out duration-400 sm:h-[48px] hover:scale-[1.02] my-5 tracking-wider group relative inline-flex items-center overflow-hidden rounded border border-purple-800 px-8 py-3 text-white focus:outline-none focus:ring active:text-white"
                 href="/download"
               >
                 <span
@@ -369,115 +389,7 @@
           </div>
         </div>
 
-        <!-- MOVIE 5 -->
-
-        <div class="swiper-slide">
-          <div class="card-wrap flex justify-center align-middle flex-col">
-            <div class="relative">
-              <img
-                class="h-[700px]"
-                src="/assets/poster/5pstlvsfdfsvfg.jpg"
-                alt=""
-              />
-            </div>
-            <div class="show-desc bg-black bottom-16 text-white">
-              <!-- <div class="title"></div>
-                <div class="genre text-sm  text-gray-200">Drama</div>
-                <p class="short-info text-gray-500 w-[320px] text-[15px]">
-                  The origins of the opioid crises in the united States,...
-                </p> -->
-              <a
-                class="w-[180px] sm:w-[230px] transition-all ease-in-out duration-400 sm:h-[48px] hover:scale-[1.02] my-3 tracking-wider group relative inline-flex items-center overflow-hidden rounded border border-current px-8 py-3 text-white focus:outline-none focus:ring active:text-white"
-                href="/download"
-              >
-                <span
-                  class="absolute -end-full transition-all group-hover:end-4"
-                >
-                  <svg
-                    class="h-5 w-5 rtl:rotate-180"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M17 8l4 4m0 0l-4 4m4-4H3"
-                    />
-                  </svg>
-                </span>
-
-                <span
-                  class="text-sm font-medium transition-all group-hover:me-4"
-                >
-                  Try Now
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- MOVIE 6 -->
-
-        <div class="swiper-slide">
-          <div class="card-wrap flex justify-center align-middle flex-col">
-            <div class="">
-              <img
-                class="h-[700px]"
-                src="/assets/poster/6spmacsdver.jpg"
-                alt=""
-              />
-            </div>
-            <div class="show-desc bg-black bottom-16 text-white">
-              <!-- <div class="title"></div>
-                <div class="genre text-sm  text-gray-200">Drama</div>
-                <p class="short-info text-gray-500 w-[320px] text-[15px]">
-                  The origins of the opioid crises in the united States,...
-                </p> -->
-              <a
-                class="w-[180px] sm:w-[230px] transition-all ease-in-out duration-400 sm:h-[48px] hover:scale-[1.02] my-3 tracking-wider group relative inline-flex items-center overflow-hidden rounded border border-current px-8 py-3 text-white focus:outline-none focus:ring active:text-white"
-                href="/download"
-              >
-                <span
-                  class="absolute -end-full transition-all group-hover:end-4"
-                >
-                  <svg
-                    class="h-5 w-5 rtl:rotate-180"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M17 8l4 4m0 0l-4 4m4-4H3"
-                    />
-                  </svg>
-                </span>
-
-                <span
-                  class="text-sm font-medium transition-all group-hover:me-4"
-                >
-                  Try Now
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- MOVIE 7 -->
-
-        <!-- <div class="swiper-slide">Slide 7</div> -->
-        <!-- MOVIE 8 -->
-
-        <!-- <div class="swiper-slide">Slide 8</div> -->
-
-        <!-- MOVIE 9 -->
-
-        <!-- <div class="swiper-slide">Slide 9</div> -->
+        <!-- SLIDE 5 -->
       </div>
       <div class="swiper-button-next swiper-btns"></div>
       <div class="swiper-button-prev swiper-btns"></div>
@@ -490,26 +402,38 @@
     <section
       class="bg-black border-t-[1px] border-t-gray-500 mt-7 text-white text-center mx-5 py-12"
     >
-      <div>
-        <h1 class="text-2xl font-bold">Shutter on your Devices</h1>
+      <div class="mb-7">
+        <h1 class="text-2xl sm:text-4xl font-bold">Shutter on your Devices</h1>
         <p class="my-3">
           Watch all your favourite shows and movies on your
           SmartTVs,Mobile,Computer and more.
         </p>
-        <video src=""></video>
+        <img class="sm:w-[70%] mx-auto" src="/assets/designs/mac.jpg" alt="" />
       </div>
-      <div>
-        <h1 class="text-2xl font-bold">Download your Shows to watch offline</h1>
+      <div class="mb-14">
+        <h1 class="text-2xl font-bold sm:text-4xl">
+          Download your Shows to watch offline
+        </h1>
         <p class="my-3">Save your shows easily to your local storage</p>
-        <video src=""></video>
+        <img
+          class="h-[280px] sm:h-[510px] mx-auto"
+          src="/assets/designs/mobile one piece.jpg"
+          alt=""
+        />
       </div>
-      <div>
-        <h1 class="text-2xl font-bold">All Services - One Shutter</h1>
+      <div class="mb-14">
+        <h1 class="text-2xl font-bold sm:text-4xl">
+          All Services - One Shutter
+        </h1>
         <p class="my-3">Get all shows from everywhere on Shutter</p>
-        <video src=""></video>
+        <img
+          class="h-[280px] sm:h-[510px] mx-auto"
+          src="/assets/designs/mobile shows.jpg"
+          alt=""
+        />
       </div>
       <div>
-        <h1 class="text-2xl font-bold">Special Request - VOD</h1>
+        <h1 class="text-2xl font-bold sm:text-4xl">Special Request - VOD</h1>
         <p class="my-3">
           Got a particular Movie Demand? we got you, make a special request.
         </p>

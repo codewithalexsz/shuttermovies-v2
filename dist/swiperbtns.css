@@ -17,17 +17,17 @@
 .dynamic-txts li {
   position: relative;
   top: 0;
-  animation: slide 12s steps(3) infinite;
+  animation: slide 7s steps(3) infinite;
 }
 .dynamic-txts li::after {
-  background-color: black;
+  background-color: transparent;
   content: "";
   left: 0;
   height: 100%;
   width: 100%;
   position: absolute;
   /* border-left: 1px solid white; */
-  animation: typing 3s steps(8) infinite;
+  animation: typing 5s steps(8) infinite;
 }
 
 @keyframes typing {
