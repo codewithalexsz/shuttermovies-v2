@@ -1588,6 +1588,11 @@ input:checked + .toggle-bg {
   border-color: rgb(144 97 249 / var(--tw-border-opacity));
 }
 
+.border-purple-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(126 58 242 / var(--tw-border-opacity));
+}
+
 .border-t-gray-500 {
   --tw-border-opacity: 1;
   border-top-color: rgb(107 114 128 / var(--tw-border-opacity));
@@ -1768,6 +1773,10 @@ input:checked + .toggle-bg {
   padding-top: 1rem;
 }
 
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1824,6 +1833,10 @@ input:checked + .toggle-bg {
   line-height: 1.25rem;
 }
 
+.text-\[55px\] {
+  font-size: 55px;
+}
+
 .font-\[600\] {
   font-weight: 600;
 }
@@ -1866,6 +1879,10 @@ input:checked + .toggle-bg {
 
 .tracking-wider {
   letter-spacing: 0.05em;
+}
+
+.tracking-widest {
+  letter-spacing: 0.1em;
 }
 
 .text-blue-600 {
