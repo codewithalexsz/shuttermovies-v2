@@ -45,3 +45,32 @@
     top: -280px;
   }
 }
+
+.faq {
+  width: 80% !important;
+}
+
+.faqs {
+  margin: 70px 0 !important;
+}
+
+input {
+  height: 40px;
+  background-color: transparent;
+  border-radius: 50px;
+  color: white;
+  padding: 0 20px;
+}
+
+.message {
+  height: 100px;
+}
+
+.send {
+  background-color: rgb(121, 49, 121);
+  margin: 0 auto;
+}
+
+.send:hover {
+  background-color: rgba(121, 49, 121, 0.692);
+}
